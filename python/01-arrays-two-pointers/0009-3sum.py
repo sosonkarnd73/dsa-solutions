@@ -69,7 +69,7 @@ def threeSum(nums: list[int]) -> list[list[int]]:
     sols = []
     itr = 0
     l = len(nums) - 1
-    while(itr < l and nums[itr] <= 1 ):
+    while(itr < l and nums[itr] <= 0 ):
         #print(nums, itr, l, -1 * nums[itr])
         t_s = twoSum(nums, itr+1, l, -1 * nums[itr])
         for i in t_s:
